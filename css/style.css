@@ -1,0 +1,386 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background: #007bff;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+/* MENU TOGGLE (untuk HP) */
+.menu-toggle {
+    display: none;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    background-color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s ease;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.img-container img.zoomable {
+    max-width: 200px;
+    height: auto;
+    cursor: zoom-in;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.img-container img.zoomable:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+p{
+    text-align: center;
+}
+.about-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-description,
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #444;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.map-button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.map-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0f0f0;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.map-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.map-icon {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+}
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* SECTION */
+section {
+    padding: 25px 20px;
+    margin: 15px auto;
+    background: white;
+    border-radius: 8px;
+    width: 95%;
+    max-width: 1200px;
+    min-width: 950px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+section h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+section p {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 12px 20px;
+    background: gray;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE UNTUK MOBILE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    section {
+        min-width: 385px;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+
+    nav ul li a {
+        padding: 14px;
+    }
+
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
+/* BANNER */
+.banner-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.banner-img {
+    width: 80%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .banner-wrapper {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0;
+    }
+}
+
+/* fsdown di menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #007bff;
+    min-width: 230px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #0056b3;
+}
+
+/* Tambahan agar dropdown bisa tampil di mobile */
+@media (max-width: 768px) {
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown-content li a {
+        background-color: #0069d9;
+        color: white;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #0056b3;
+    }
+    .dropdown-content {
+        display: none !important;
+    }
+
+    .dropdown-content.show {
+        display: block !important;
+    }
+
+}

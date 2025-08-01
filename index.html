@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. ANDRA JAVA TEKNIK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>CV. ANDRA JAYA TEKNIK</h1>
+    <p>"Kepuasan Customer Kebanggaan Kami"</p>
+
+    <!-- Tombol menu untuk HP -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Navigasi -->
+    <nav id="navMenu">
+        <ul>
+            <li><a href="#home" onclick="showSection('home', '')">Home</a></li>
+            <li><a href="#cvAndraJayaTeknik" onclick="showSection('cvAndraJayaTeknik', 'Profile')">Profile</a></li>
+            <li><a href="#legalitasManagement" onclick="showSection('legalitasManagement', 'Legalitas Management')">Legalitas
+                Management</a></li>
+            <li><a href="#skopOfWork" onclick="showSection('skopOfWork', 'Skop of Work')">Skop of Work</a></li>
+            <li><a href="#peralatan" onclick="showSection('peralatan', 'Peralatan')">Peralatan</a></li>
+            <li class="dropdown">
+                <a href="#layanan" onclick="toggleDropdown(event)">Layanan ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="#layanan-overhaul" onclick="showSection('layanan-overhaul', 'Overhaul')">General Repairing
+                        </a></li>
+                    <li><a href="#layanan-rewinding" onclick="showSection('layanan-supplier', 'Supplier')">Reweding</a></li>
+                    <li><a href="#layanan-everhold" onclick="showSection('layanan-panel', 'Panel')">Ever Hold</a>
+                    </li>
+                    <li><a href="#layanan-supplier" onclick="showSection('layanan-low', 'Rewinding LV')">Supplier</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Banner Gambar -->
+<!-- Banner -->
+<div class="banner-wrapper">
+    <img src="img/benner.jpg" alt="Banner Perusahaan" class="img-fluid banner-img">
+</div>
+
+
+<main>
+    <section id="home" class="about-section">
+        <h2>Tentang Kami</h2>
+
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Logo CV Andra Jaya Teknik">
+        </div>
+
+        <p class="about-description">
+            <strong>CV. ANDRA JAYA TEKNIK</strong> adalah perusahaan yang berkomitmen memberikan pelayanan terbaik demi kepuasan pelanggan.
+            Dengan tim profesional dan berpengalaman, kami selalu mengutamakan kualitas kerja, ketepatan waktu, serta hasil yang maksimal
+            di setiap proyek yang kami tangani.
+        </p>
+
+        <p class="contact-info">
+            <strong>CV. ANDRA JAYA TEKNIK</strong><br>
+            PERUM Alam Pesona Wanajaya Blok P28 No.28<br>
+            RT 001 / RW 011, Kel. Wanasari, Kec. Cibitung<br>
+            Kab. Bekasi, Jawa Barat – 17521<br>
+            📞 <a href="https://wa.me/6281311307783">0813-1130-7783</a>
+        </p>
+
+        <div class="map-button-container">
+            <a href="https://www.waze.com/id/live-map/directions/id/jawa-barat/jl.-alam-pesona-wanajaya-blok-p28-no.28?to=place.ChIJO4f65YeFaS4RTKI5g53kZAM"
+               target="_blank"
+               class="map-button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYMxEGuctuoZCB1A2BkaAorkxP1P7bCYD0w&s"
+                     alt="Peta"
+                     class="map-icon">
+                Lihat Lokasi di Peta
+            </a>
+        </div>
+    </section>
+
+
+
+    <!--    <section id="cvAndraJayaTeknik" style="display: none;">-->
+    <section id="cvAndraJayaTeknik" style="display: none;">
+        <h2>CV. ANDRA JAYA TEKNIK</h2>
+        <p>
+            CV ANDRA JAYA TEKNIK adalah sebuah layanan yang menjual jasa service dinamo (rewinding electro motor) yang
+            didirikan pada 2019 dan sudah beroperasi hingga saat ini.
+        </p>
+
+        <h3>Visi dan Misi</h3>
+        <p><strong>Visi:</strong> Menjadi bengkel dinamo (rewinding electro motor) terpercaya dan berkualitas tinggi
+            dalam menyediakan layanan perbaikan dan perawatan dinamo untuk berbagai industri, dengan mengutamakan
+            kepuasan pelanggan dan kualitas kerja yang unggul.</p>
+
+        <p><strong>Misi:</strong></p>
+        <ol>
+            <li>Menyediakan layanan perbaikan dan perawatan dinamo yang cepat, tepat, dan berkualitas tinggi.</li>
+            <li>Meningkatkan kepuasan pelanggan melalui komunikasi yang baik, harga yang kompetitif, dan layanan yang
+                profesional.
+            </li>
+            <li>Mengembangkan kemampuan dan pengetahuan tim teknis untuk meningkatkan kualitas layanan dan menghadapi
+                tantangan teknologi yang terus berkembang.
+            </li>
+            <li>Menjalin hubungan baik dengan pelanggan dan mitra bisnis untuk menciptakan kerja sama yang saling
+                menguntungkan.
+            </li>
+            <li>Mengutamakan keselamatan kerja dan lingkungan dalam setiap aspek operasional bengkel.</li>
+        </ol>
+
+        <h3>Kebijakan Mutu</h3>
+        <p>
+            Bengkel Dinamo CV ANDRA JAYA TEKNIK berkomitmen untuk menyediakan layanan perbaikan dan perawatan dinamo
+            yang berkualitas tinggi, dengan mengutamakan kepuasan pelanggan dan keselamatan kerja. Kami menjamin bahwa
+            setiap layanan yang kami tawarkan memenuhi standar kualitas yang tinggi dan sesuai dengan kebutuhan
+            pelanggan.
+        </p>
+
+        <p><strong>Prinsip Mutu:</strong></p>
+        <ol>
+            <li>Kualitas Layanan: Kami berkomitmen untuk menyediakan layanan yang cepat, tepat, dan berkualitas
+                tinggi.
+            </li>
+            <li>Kepuasan Pelanggan: Kami mengutamakan kepuasan pelanggan melalui komunikasi yang baik, harga yang
+                kompetitif, dan layanan yang profesional.
+            </li>
+            <li>Keselamatan Kerja: Kami mengutamakan keselamatan kerja dan lingkungan dalam setiap aspek operasional
+                bengkel.
+            </li>
+            <li>Pengembangan Tim: Kami berkomitmen untuk mengembangkan kemampuan dan pengetahuan tim teknis untuk
+                meningkatkan kualitas layanan.
+            </li>
+            <li>Peningkatan Kontinu: Kami secara terus-menerus memantau dan meningkatkan proses kerja untuk meningkatkan
+                kualitas layanan.
+            </li>
+        </ol>
+
+        <p><strong>Tujuan Mutu:</strong></p>
+        <ol>
+            <li>Meningkatkan kepuasan pelanggan melalui layanan yang berkualitas tinggi.</li>
+            <li>Mengurangi waktu tunggu dan meningkatkan efisiensi layanan.</li>
+            <li>Meningkatkan kualitas layanan melalui pengembangan tim teknis dan penggunaan teknologi yang tepat.</li>
+            <li>Mengurangi kesalahan dan meningkatkan akurasi layanan.</li>
+        </ol>
+
+        <h3>Motto</h3>
+        <p>
+            "Kepuasan customer adalah tanggung jawab kami". CV ANDRA JAYA TEKNIK akan memberikan layanan berkualitas,
+            masa depan terjamin, solusi perbaikan terpercaya, perbaikan efektif dan efisien.
+        </p>
+    </section>
+
+
+    <!--        <section id="profile">-->
+    <!--        <h2>Profile</h2>-->
+    <!--        <p>February 10, 2023</p>-->
+    <!--        <p>PT. JOVINO adalah unit usaha...</p>-->
+    <!--    </section>-->
+
+    <section id="legalitasManagement" style="display: none;">
+        <h2>LEGALITAS</h2>
+        <table style="width: 100%; max-width: 800px; border-collapse: collapse;">
+            <tr><td><strong>NAMA PERUSAHAAN</strong></td><td>: ANDRA JAYA TEKNIK</td></tr>
+            <tr><td><strong>TANGGAL PENDIRI</strong></td><td>: 04 JULI 2025</td></tr>
+            <tr><td><strong>AKTA PENDIRI</strong></td><td>: -</td></tr>
+            <tr><td><strong>SPPKP</strong></td><td>: -</td></tr>
+            <tr><td><strong>NPWP</strong></td><td>: 1000000003711646</td></tr>
+            <tr><td><strong>TDP</strong></td><td>: -</td></tr>
+            <tr><td><strong>SIUP</strong></td><td>: -</td></tr>
+            <tr><td><strong>SKD</strong></td><td>: -</td></tr>
+            <tr><td><strong>BIDANG USAHA</strong></td><td>: ELECTRICAL - MECHANICAL - GENERAL SUPPLIER - REWINDING DINAMO - REWINDING ELECTRO MOTOR & PUMP</td></tr>
+            <tr><td><strong>ALAMAT EMAIL</strong></td><td>: cv.andrajayateknik@gmail.com</td></tr>
+            <tr><td><strong>TELP./FAX</strong></td><td>: -</td></tr>
+            <tr><td><strong>HP</strong></td><td>: 0813-1130-7783</td></tr>
+            <tr><td><strong>REKENING BANK</strong></td><td>: MANDIRI</td></tr>
+            <tr><td><strong>ALAMAT</strong></td><td>: PERUM ALAM PESONA WANAJAYA P28 NO28, RT 001, RW 011, WANASARI, CIBITUNG, KAB. BEKASI, JAWA BARAT, 17521</td></tr>
+        </table>
+    </section>
+
+
+    <!--    <section id="strukturOrganisasi">-->
+<!--        <h2>Struktur Organisasi</h2>-->
+<!--        <p>Konten struktur organisasi akan ditambahkan di sini.</p>-->
+<!--    </section>-->
+
+    <!--    <section id="customerList" style="display: none;">-->
+    <!--        <h2>Customer List</h2>-->
+    <!--        <p>Daftar customer akan ditambahkan di sini.</p>-->
+    <!--    </section>-->
+
+    <section id="skopOfWork" style="display: none;">
+        <h2>Skop of Work</h2>
+        <p>
+            CV. Andra Jaya Teknik memiliki ruang lingkup pekerjaan yang luas dan mencakup berbagai bidang layanan teknikal dan industri sebagai berikut:
+        </p>
+        <ol>
+            <li><strong>DIVISI ELECTRICAL</strong>
+                <ul>
+                    <li>Perbaikan Motor Listrik, Transformer, dan General Low Voltage, Medium, dan High Voltage (Service, Rewinding, dan Maintenance)</li>
+                    <li>Overhaul Low – High Voltage</li>
+                    <li>Instalasi Daya Listrik (Electrical Power Installation)</li>
+                    <li>Fabrikasi dan Instalasi Panel (Panel Fabrication and Installation)</li>
+                    <li>Pekerjaan Mekanikal (Mechanical Work)</li>
+                </ul>
+            </li>
+            <li><strong>Air Conditioner – Chiller</strong></li>
+            <li><strong>Electronic Controller</strong></li>
+            <li><strong>General Service</strong></li>
+            <li><strong>Trading</strong></li>
+            <li><strong>Supplier</strong></li>
+            <li><strong>Pump dan Mekanikal Seal</strong></li>
+        </ol>
+        <p>
+            Dengan pengalaman dan keahlian di berbagai bidang tersebut, kami siap mendukung kebutuhan teknis dan operasional Anda secara profesional dan andal.
+        </p>
+    </section>
+
+
+    <section id="peralatan" style="display: none;">
+        <h2>Peralatan Kerja & Material</h2>
+        <div class="img-container">
+            <img src="img/peralatan.jpg" alt="Peralatan Kerja" class="zoomable" onclick="openModal(this)">
+            <img src="img/material.jpg" alt="Material" class="zoomable" onclick="openModal(this)">
+            <div class="description">
+                <p><strong>Peralatan Kerja:</strong> Kami menggunakan peralatan kerja yang lengkap dan modern untuk memastikan kualitas kerja yang efisien dan presisi, mulai dari peralatan teknik las, bor listrik, grinder, dan berbagai alat ukur.</p>
+                <p><strong>Material:</strong> Material yang digunakan seperti besi, pipa, kabel, dan komponen listrik dipilih dari produsen terpercaya untuk menjamin mutu dan ketahanan hasil pekerjaan kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Zoom -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+
+
+    <section id="peralatanKerjaMaterial" style="display: none;">
+        <h2>Peralatan Kerja & Material</h2>
+        <p>Informasi peralatan dan material akan ditambahkan di sini.</p>
+    </section>
+
+    <section id="layanan" style="display: none;">
+        <h2>Layanan CV. Aulia Teknik Bersama</h2>
+        <p>Detail layanan akan ditambahkan di sini.</p>
+    </section>
+
+
+
+    <section id="layanan-overhaul" style="display: none;">
+        <h2>General Repairing</h2>
+        <p>
+            Layanan <strong>General Repairing</strong> mencakup perbaikan menyeluruh untuk berbagai jenis peralatan industri, mekanikal, dan elektrikal.
+            Kami menangani kerusakan ringan hingga berat dengan proses identifikasi, pembongkaran, penggantian komponen rusak, hingga pengujian akhir untuk memastikan performa alat kembali optimal.
+            Ditangani oleh teknisi profesional dan berpengalaman, layanan ini menjamin ketepatan pengerjaan, efisiensi waktu, serta kualitas hasil yang tahan lama.
+        </p>
+    </section>
+
+
+    <section id="layanan-rewinding" style="display: none;">
+        <h2>Rewinding</h2>
+        <p>
+            Layanan <strong>Rewinding</strong> merupakan proses perbaikan dan penggulungan ulang lilitan pada motor listrik, dinamo, dan pompa listrik yang mengalami kerusakan atau aus.
+            Proses ini dilakukan dengan teliti menggunakan material berkualitas tinggi untuk memastikan efisiensi energi dan daya tahan yang optimal.
+            Tim kami memiliki keahlian dalam menangani berbagai jenis dan ukuran motor, mulai dari skala kecil hingga industri besar.
+            Hasil rewinding kami menjamin performa alat kembali seperti semula bahkan lebih baik.
+        </p>
+    </section>
+
+
+    <section id="layanan-everhold" style="display: none;">
+        <h2>Ever Hold</h2>
+        <p>
+            Layanan <strong>Ever Hold</strong> adalah solusi perawatan dan pengamanan alat berat serta sistem mekanikal-elektrikal agar tetap berfungsi optimal dalam jangka panjang.
+            Kami menyediakan pemeliharaan rutin, pengecekan sistem, serta pengencangan dan penyetelan komponen penting untuk mencegah kerusakan dini dan memperpanjang umur peralatan.
+            Dengan layanan Ever Hold, Anda dapat memastikan stabilitas performa alat serta meminimalisir downtime operasional.
+        </p>
+    </section>
+
+
+    <section id="layanan-supplier" style="display: none;">
+        <h2>Supplier</h2>
+        <p>
+            Layanan <strong>Supplier</strong> dari CV. Andra Jaya Teknik menyediakan berbagai kebutuhan alat, komponen, dan material untuk proyek-proyek mekanikal, elektrikal, maupun kebutuhan industri lainnya.
+            Kami menjalin kerja sama dengan berbagai pihak terpercaya untuk memastikan kualitas produk yang kami pasok selalu dalam kondisi terbaik dan siap digunakan.
+            Kecepatan pengadaan, ketepatan jenis barang, dan harga yang kompetitif menjadi komitmen utama kami dalam mendukung kelancaran operasional mitra kami.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 CV. ANDRA JAYA TENKIK | Powered by andrajayateknik.com</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
